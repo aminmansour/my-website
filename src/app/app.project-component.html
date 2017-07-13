@@ -1,0 +1,28 @@
+<div id="project" class="container page">
+  <p class="title">Project wall</p>
+  <div class="hidden-xs hidden-sm">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mt-4 card-container" *ngFor="let project of infoSource.projects">
+      <div class="card">
+        <div class="card-block">
+          <span class="card-title">{{project.title}}</span>
+          <p>{{project.text}}</p>
+          <a *ngIf="project.link" class="success-message project-link" href="{{project.link}}">View the application</a>
+          <img class="card-img-top" src="../assets/images/project-images/{{project.imageSource}}.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden-md hidden-lg">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mt-4 card-container" *ngFor="let project of infoSource.projectsMobileOrder">
+      <div class="card">
+        <div class="card-block">
+          <span class="card-title">{{project.title}}</span>
+          <p>{{project.text}}</p>
+          <a *ngIf="project.link" class="success-message project-link" href="{{project.link}}">View the application</a>
+          <img class="card-img-top" src="../assets/images/project-images/{{project.imageSource}}.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

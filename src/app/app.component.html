@@ -1,0 +1,16 @@
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+</style>
+
+<div (click)="closeNav()">
+  <nav-bar></nav-bar>
+  <home></home>
+  <introduction></introduction>
+  <about></about>
+  <project></project>
+  <service></service>
+  <contact></contact>
+  <footer-bar></footer-bar>
+</div>
+
+<alt-nav [toShowNav]="altNavPresent" (toggle)="checkNavState($event)"></alt-nav>

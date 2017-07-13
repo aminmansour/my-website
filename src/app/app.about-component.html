@@ -1,0 +1,41 @@
+<div id="about" class="container-fluid page">
+  <div class="row">
+    <p class="title text-center">About</p>
+    <p class="text">
+      {{infoSource.aboutText}}
+    </p>
+
+    <p class="sub-title space-below">Languages and frameworks i know</p>
+
+  </div>
+  <div class="container">
+    <table class="table hidden-lg hidden-md ">
+      <tbody>
+        <tr *ngFor="let item of infoSource.programmingNameStore">
+          <td>{{item}}</td>
+        </tr>
+
+        <tr>
+          <td></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="container hidden-xs hidden-sm lang-row">
+    <div class="row" class="space-below">
+      <div class="col-md-1  col-xs-4">
+      </div>
+
+      <div *ngFor="let item of infoSource.programmingLogoPaths" class="col-md-1 col-xs-4">
+        <img class="img-responsive" src="../assets/images/language-images/{{item}}.png" />
+      </div>
+
+    </div>
+  </div>
+
+
+
+</div>

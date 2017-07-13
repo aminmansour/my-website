@@ -1,0 +1,60 @@
+<div id="contact" class="container-fluid">
+  <div class="row">
+
+    <section id="contact">
+      <div class="section-content">
+        <h1 class="title">Contact me</h1>
+        <p class="contact-instruction">For any enquires, leave a message with your email and i'll get back to you as soon as possible!</p>
+      </div>
+      <div class="container contact-section">
+
+        <form [formGroup]='form' (ngSubmit)="onSubmit()">
+          <div class="col-md-6 form-line">
+
+            <div class="form-group">
+              <label for="exampleInputUsername">Name</label>
+              <span class="error" *ngIf="isSubmitted&&form.controls.name.errors?.required ">
+                  required
+                </span>
+              <input [value]='defaultInputValue' type="text" class="form-control" id="name" formControlName='name'>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail">Email Address</label>
+              <span class="error" *ngIf="form.controls.email.errors  && isSubmitted ">
+                  valid email required
+                </span>
+              <input [value]='defaultInputValue' type="email" class="form-control" id="exampleInputEmail" formControlName='email'>
+            </div>
+
+            <div class="form-group">
+              <label for="telephone">Mobile No. (optional)</label>
+              <span class="error" *ngIf="form.controls.number.errors?.pattern && form.controls.number.touched">
+                  invalid phone number 
+                </span>
+              <input [value]='defaultInputValue' type="tel" class="form-control" id="telephone" formControlName='number'>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+
+            <div class="form-group">
+              <label for="description"> Message</label>
+              <span class="error" *ngIf="isSubmitted&&form.controls.message.errors?.required  ">
+                 required 
+                </span>
+              <textarea [value]='defaultInputValue' class="form-control" id="description" formControlName='message'></textarea>
+            </div>
+
+            <span [ngClass]='{"show-text":countOfSent>0,"hide-text":countOfSent==0}' class="text success-message"> The message has been sent <span *ngIf="countOfSent>=2" class="color-white">   * limit is 1 per page-visit </span>            </span>
+            <div><button type="submit" class=" submit"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i>Send message</button></div>
+
+          </div>
+          <span class="text"> Email me if you like instead, at <span class="email">amansour1@outlook.com</span></span>
+        </form>
+
+      </div>
+    </section>
+
+  </div>
+</div>
