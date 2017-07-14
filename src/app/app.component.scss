@@ -99,9 +99,6 @@
     text-align: center;
     margin-bottom: 20px;
   }
-  .page {
-    margin-bottom: 10px;
-  }
   .success-message {
     text-align: center;
   }
@@ -315,6 +312,12 @@
   #contact .contact-section .col-md-6 {
     width: 100%;
     border: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #introduction {
+    margin-top: 60px;
   }
 }
 

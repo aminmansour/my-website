@@ -1,7 +1,7 @@
 <div id="project" class="container page">
   <p class="title">Project wall</p>
   <div class="hidden-xs hidden-sm">
-    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mt-4 card-container" *ngFor="let project of infoSource.projects">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt-4 card-container" *ngFor="let project of infoSource.projects">
       <div class="card">
         <div class="card-block">
           <span class="card-title">{{project.title}}</span>
@@ -14,7 +14,7 @@
   </div>
 
   <div class="hidden-md hidden-lg">
-    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mt-4 card-container" *ngFor="let project of infoSource.projectsMobileOrder">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt-4 card-container" *ngFor="let project of infoSource.projectsMobileOrder">
       <div class="card">
         <div class="card-block">
           <span class="card-title">{{project.title}}</span>
