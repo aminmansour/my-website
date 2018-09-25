@@ -30,7 +30,7 @@
             <div class="form-group">
               <label for="telephone">Mobile No. (optional)</label>
               <span class="error" *ngIf="form.controls.number.errors?.pattern && form.controls.number.touched">
-                  invalid phone number 
+                  invalid phone number
                 </span>
               <input [value]='defaultInputValue' type="tel" class="form-control" id="telephone" formControlName='number'>
             </div>
@@ -41,16 +41,16 @@
             <div class="form-group">
               <label for="description"> Message</label>
               <span class="error" *ngIf="isSubmitted&&form.controls.message.errors?.required  ">
-                 required 
+                 required
                 </span>
               <textarea [value]='defaultInputValue' class="form-control" id="description" formControlName='message'></textarea>
             </div>
 
-            <span [ngClass]='{"show-text":countOfSent>0,"hide-text":countOfSent==0}' class="text success-message"> The message has been sent <span *ngIf="countOfSent>=2" class="color-white">   * limit is 1 per page-visit </span>            </span>
+            <span [ngClass]='{"show-text":countOfSent>0,"hide-text":countOfSent==0}' class="text success-message"> The message has been sent <span *ngIf="countOfSent>=2" class="color-white">   * limit is 1 per page-visit </span> </span>
             <div><button type="submit" class=" submit"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i>Send message</button></div>
 
           </div>
-          <span class="alt-email text"> Email me if you like instead, at <span class="email">amansour1@outlook.com</span></span>
+          <span class="text"> Email me if you like instead at <span class="email">amansour1@outlook.com</span></span>
         </form>
 
       </div>

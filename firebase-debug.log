@@ -1,0 +1,52 @@
+[debug] [2018-09-25T02:41:18.717Z] ----------------------------------------------------------------------
+[debug] [2018-09-25T02:41:18.744Z] Command:      C:\Program Files\nodejs\node.exe C:\Users\Amans\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-09-25T02:41:18.747Z] CLI Version:  3.9.1
+[debug] [2018-09-25T02:41:18.747Z] Platform:     win32
+[debug] [2018-09-25T02:41:18.748Z] Node Version: v8.11.4
+[debug] [2018-09-25T02:41:18.754Z] Time:         Tue Sep 25 2018 03:41:18 GMT+0100 (GMT Summer Time)
+[debug] [2018-09-25T02:41:18.754Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-09-25T02:41:18.892Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-25T02:41:18.898Z] > authorizing via signed-in user
+[debug] [2018-09-25T02:41:18.922Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/amins-website  
+ Tue Sep 25 2018 03:41:18 GMT+0100 (GMT Summer Time)
+[debug] [2018-09-25T02:41:21.325Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-25T02:41:21.332Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/amins-website/tokens  
+ Tue Sep 25 2018 03:41:21 GMT+0100 (GMT Summer Time)
+[debug] [2018-09-25T02:41:24.032Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'amins-website'...
+[info] 
+[info] i  deploying functions, hosting
+[debug] [2018-09-25T02:41:25.354Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "~4.2.1",
+    "firebase-functions": "^0.5.7"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] [2018-09-25T02:41:25.400Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/amins-website?view=CONSUMER_VIEW  
+ Tue Sep 25 2018 03:41:25 GMT+0100 (GMT Summer Time)
+[debug] [2018-09-25T02:41:25.409Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/amins-website?view=CONSUMER_VIEW  
+ Tue Sep 25 2018 03:41:25 GMT+0100 (GMT Summer Time)
+[debug] [2018-09-25T02:41:27.348Z] <<< HTTP RESPONSE 200
+[info] +  runtimeconfig: all necessary APIs are enabled
+[debug] [2018-09-25T02:41:27.427Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2018-09-25T02:41:27.449Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/amins-website  
+ Tue Sep 25 2018 03:41:27 GMT+0100 (GMT Summer Time)
+[debug] [2018-09-25T02:41:27.452Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/amins-website/apiKeys  
+ Tue Sep 25 2018 03:41:27 GMT+0100 (GMT Summer Time)
+[debug] [2018-09-25T02:41:28.641Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-25T02:41:28.869Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2018-09-25T02:41:45.977Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/amins-website/configs  
+ Tue Sep 25 2018 03:41:45 GMT+0100 (GMT Summer Time)
+[debug] [2018-09-25T02:41:47.938Z] <<< HTTP RESPONSE 200
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2018-09-25T02:41:51.771Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/amins-website/uploads/-LNDa_E-vJIgTRtz5vTz?fileCount=37&message=  
+ Tue Sep 25 2018 03:41:51 GMT+0100 (GMT Summer Time)

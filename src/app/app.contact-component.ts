@@ -24,7 +24,7 @@ export class ContactComponent {
     this.form = this.formBuilder.group({
       name: this.formBuilder.control("", Validators.required),
       email: this.formBuilder.control("", Validators.compose([Validators.required, Validators.pattern("[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+")])),
-      number: this.formBuilder.control("", Validators.pattern("/+?[0-9]+")),
+  number: this.formBuilder.control("", Validators.pattern("([0-9]*)")),
       message: this.formBuilder.control("", Validators.required)
     });
   }

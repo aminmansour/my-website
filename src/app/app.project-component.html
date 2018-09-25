@@ -1,28 +1,79 @@
 <div id="project" class="container page">
   <p class="title">Project wall</p>
-  <div class="hidden-xs hidden-sm">
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt-4 card-container" *ngFor="let project of infoSource.projects">
-      <div class="card">
-        <div class="card-block">
-          <span class="card-title">{{project.title}}</span>
-          <p>{{project.text}}</p>
-          <a *ngIf="project.link" class="success-message project-link" href="{{project.link}}">View the application</a>
-          <img class="card-img-top" src="../assets/images/project-images/{{project.imageSource}}.jpg">
-        </div>
+  <div class="row hidden-xs hidden-sm">
+  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mt-4 card-container" *ngFor="let project of infoSource.projectsBatch">
+    <div class="card">
+      <div class="card-block">
+      <span class="card-title">{{project.title}}</span>
+        <p>{{project.text}}</p>
+    <a *ngIf="project.link" class="success-message project-link" href="{{project.link}}">View the Application
+    </a>
+    <a *ngIf="project.downloadLink" class="success-message project-link" href="../assets/{{project.downloadLink}}">Download the Application <br/>
+
+    </a>
+      <a *ngIf="project.projectLink" class="success-message project-link" href="../assets/{{project.projectLink}}">View the Project Report
+      </a>
+        <img class="card-img-top" src="../assets/images/project-images/{{project.imageSource}}.jpg">
       </div>
     </div>
+  </div>
+  </div>
+
+  <div class="row hidden-xs hidden-sm">
+  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mt-4 card-container" *ngFor="let project of infoSource.projectsBatch1">
+    <div class="card">
+      <div class="card-block">
+      <span class="card-title">{{project.title}}</span>
+        <p>{{project.text}}</p>
+    <a *ngIf="project.link" class="success-message project-link" href="{{project.link}}">View the Application
+    </a>
+    <a *ngIf="project.downloadLink" class="success-message project-link" href="../assets/{{project.downloadLink}}">Download the Application <br/>
+
+    </a>
+      <a *ngIf="project.projectLink" class="success-message project-link" href="../assets/{{project.projectLink}}">View the Project Report
+      </a>
+        <img class="card-img-top" src="../assets/images/project-images/{{project.imageSource}}.jpg">
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="row hidden-xs hidden-sm">
+  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 mt-4 card-container" *ngFor="let project of infoSource.projectsBatch2">
+    <div class="card">
+      <div class="card-block">
+      <span class="card-title">{{project.title}}</span>
+        <p>{{project.text}}</p>
+    <a *ngIf="project.link" class="success-message project-link" href="{{project.link}}">View the Application
+    </a>
+    <a *ngIf="project.downloadLink" class="success-message project-link" href="../assets/{{project.downloadLink}}">Download the Application <br/>
+
+    </a>
+      <a *ngIf="project.projectLink" class="success-message project-link" href="../assets/{{project.projectLink}}">View the Project Report
+      </a>
+        <img class="card-img-top" src="../assets/images/project-images/{{project.imageSource}}.jpg">
+      </div>
+    </div>
+  </div>
   </div>
 
   <div class="hidden-md hidden-lg">
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt-4 card-container" *ngFor="let project of infoSource.projectsMobileOrder">
-      <div class="card">
-        <div class="card-block">
-          <span class="card-title">{{project.title}}</span>
-          <p>{{project.text}}</p>
-          <a *ngIf="project.link" class="success-message project-link" href="{{project.link}}">View the application</a>
-          <img class="card-img-top" src="../assets/images/project-images/{{project.imageSource}}.jpg">
-        </div>
-      </div>
-    </div>
-  </div>
+ <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt-4 card-container" *ngFor="let project of infoSource.projectsMobileOrder">
+   <div class="card">
+     <div class="card-block">
+       <span class="card-title">{{project.title}}</span>
+       <p>{{project.text}}</p>
+       <a *ngIf="project.link" class="success-message project-link" href="{{project.link}}">View the application</a>
+
+       <a *ngIf="project.downloadLink" class="success-message project-link" href="../assets/{{project.downloadLink}}">Download the Application <br/>
+
+       </a>
+         <a *ngIf="project.projectLink" class="success-message project-link" href="../assets/{{project.projectLink}}">View the Project Report
+           <br/>
+         </a>
+       <img class="card-img-top" src="../assets/images/project-images/{{project.imageSource}}.jpg">
+     </div>
+   </div>
+ </div>
+</div>
 </div>
